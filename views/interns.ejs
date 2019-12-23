@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/home.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<!--NavBar--->
+ <div class="header" id="myheader">
+  <a href="home">Home</a>
+  <a href="interns"  class="active">Interns</a>
+  <a href="projects">Projects</a>
+  <a href="addintern">Add Intern</a>
+  <a href="addproject">Add Project</a>
+  <a href="assignproject">Assign Project to Intern</a>
+  <a href="#" style="float:right; font-weight:bold">GNUKhata</a>
+  <img src="images/logo.png" align="right"  width="50" height="50" padding="2px">
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div class="row">
+  <div class="column">
+  <div class="container-fluid row">
+
+    <div id="details" style="width: 41vw; height: 75vh;margin: 2vh; margin-top: 6vh;padding-left: 3vh; border:2px solid white; overflow: auto;">
+
+      <% results.forEach(function(result) {%>
+
+      <div style="width: 38vw; height: 15vh; margin:5vh; margin-left: 0; border-radius: 2vh; border: 1px solid white;">
+        
+        <div class="row" style="padding: 0vh 3vh;">
+          
+          <div>
+            <p style="color:#ffffff;font-size:18px"><strong>Intern's Id: </strong><%= result.internid %></p>
+
+            <p style="color:#ffffff;font-size:18px"><strong>Intern's Name: </strong><%= result.fullname %></p>
+            
+          </div>
+
+          <div style="margin-left: 58vh; margin-top: -11vh;">
+            <button type="button" class="btn btn-primary" onclick="showIntern('<%= result.internid %>','<%= result.fullname %>','<%= result.address %>','<%= result.branch %>','<%=result.projname%>')">View</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <% }); %>
+        <div style="margin-bottom: 0vh; margin-left: 45vh; padding:4vh">
+        <button type="button" onclick="window.location.href = 'addintern';"> Add new Intern </button> 
+        </div>
+    </div>
+    </div>
+    </div>
+  <div class="column">
+    
+      <div style="width: 45vw; height: 75vh; margin-left: 55vh; margin-top: 6vh; overflow: auto;border: 2px solid white;">
+        <div id="patient_view">
+          
+          <div style="margin: 5vh 5vh;">
+            <p style="color:#ffffff;font-size:17px"><strong>Intern's Id: </strong><span id="internid"> Intern's Id</span></p>
+
+            <p style="color:#ffffff;font-size:17px"><strong>Intern's Name: </strong><span id="fullname"> Intern's Name</span></p>
+
+            <p style="color:#ffffff;font-size:17px"><strong>Intern's Address: </strong><span id="address"> Intern's Address</span></p>
+            
+            <p style="color:#ffffff;font-size:17px"><strong>Intern's Branch: </strong><span id="branch"> Intern's Branch</span></p>            
+            
+            <p style="color:#ffffff;font-size:17px"><strong>Intern's Projects: </strong><span id="projname"> Intern's Projects</span></p>
+          </div>          
+        </div>
+        <div style="margin-bottom: 0vh; margin-left: 60vh;padding:4vh">
+        <button type="button" onclick="window.location.href = 'assignproject';"> Assign a Project</button> 
+        </div>
+      </div>
+    </div>
+   </div>
+
+
+<!--Footer--->
+ <div class="footer" id="myfooter">
+ <img src="images/logo.png" align="left"  width="50" height="50" padding="2px">
+  <a href="#" style="float:right"> info@gnukhata.in</a>
+  <a href="#" >Follow GNUKhata on </a>
+  <a href="https://www.facebook.com/gnukhata" class="fa fa-facebook"></a>
+  <a href="https://twitter.com/gnukhata_in" class="fa fa-twitter"></a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<script src="/js/home.js"></script> 
+</body>
+</html> 

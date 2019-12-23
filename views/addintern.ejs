@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/home.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+<!--NavBar--->
+ <div class="header" id="myheader">
+  <a href="home">Home</a>
+  <a href="interns">Interns</a>
+  <a href="projects">Projects</a>
+  <a href="addintern" class="active">Add Intern</a>
+  <a href="addproject">Add Project</a>
+  <a href="assignproject">Assign Project to Intern</a>
+  <a href="#" style="float:right; font-weight:bold">GNUKhata</a>
+  <img src="images/logo.png" align="right"  width="50" height="50" padding="2px">
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div class="row">
+  <div class="column">
+  <div style="width: 41vw; height: 75vh;margin: 2vh; margin-top:7vh;padding-left: 3vh; background-color: #FF6382; border:2px solid white;">
+  <p style="color:#ffffff;font-size:60px; margin-left: 11vh; margin-top:28vh;">Add an Intern</p>
+
+    </div>
+     </div>
+  <div class="column">
+   <div style="width: 45vw; height: 75vh; margin-left: 55vh; margin-top:7vh;padding:4vh; overflow: auto;border: 2px solid white;">
+     <form action="/addi"  method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Intern's name">
+        <label for="address">Address</label>
+        <textarea id="address" name="address" placeholder="Address" style="height:70px"></textarea>
+        <label for="branch">Branch</label>
+        <input type="text" id="branch" name="branch" placeholder="Branch">
+        <input type="submit" value="Submit">
+      </form>
+   </div>
+    </div>
+   </div>
+
+
+<!--Footer--->
+ <div class="footer" id="myfooter">
+ <img src="images/logo.png" align="left"  width="50" height="50" padding="2px">
+  <a href="#" style="float:right"> info@gnukhata.in</a>
+  <a href="#" >Follow GNUKhata on </a>
+  <a href="https://www.facebook.com/gnukhata" class="fa fa-facebook"></a>
+  <a href="https://twitter.com/gnukhata_in" class="fa fa-twitter"></a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<script src="assets/js/home.js"></script> 
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+</body>
+</html> 

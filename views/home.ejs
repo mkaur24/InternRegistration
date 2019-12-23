@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/home.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<!--NavBar--->
+ <div class="header" id="myheader">
+  <a href="home" class="active">Home</a>
+  <a href="interns">Interns</a>
+  <a href="projects">Projects</a>
+  <a href="addintern">Add Intern</a>
+  <a href="addproject">Add Project</a>
+  <a href="assignproject">Assign Project to Intern</a>
+  <a href="home" style="float:right; font-weight:bold">GNUKhata</a>
+  <img src="images/logo.png" align="right"  width="50" height="50" padding="2px">
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<br>
+<!--Carousel--->
+<div id="home">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="images/0.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/2.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/1.jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+</div>
+<br><br>
+<div class="container">
+  <img src="/images/ish.png" alt="Avatar" style="width:90px">
+  <p><span>Ishmeet Kaur</span></p>
+  <p><b>Assignment:- Create internship registration system.<br>Description:-</b>
+
+The idea is to have a list of interns and a list of projects.
+
+New interns can be added as well as new projects.
+
+One intern can be a part of one or many projects.
+
+One project can have many interns.
+
+At any given point if one intern is selected then a list of projects where the selected intern is involved must be displayed.
+
+The table for interns will be as follows:
+
+Internid, fullname, address, branch.
+
+Internid should be integer and auto_increment.
+
+the table for projects is as follows:
+
+projid, projectname, domaintype (will be Finance, network or health)
+
+There will be a third table which will hold the data associating students with respective projects.
+
+This is to be decided by the intern.
+
+Database can be of intern's choice.
+
+Front end must allow to add interns, add projects and assign intern to projects.
+
+While adding an intern, the list of all available projects should be shown and also total of projects to which that intern is already assigned.
+
+Frontend technology would be javascript, CSS and HTML.
+
+Use of libraries such as jquery, bootstrap or even react is encouraged.
+
+The backend API must be REST with urls for GET,POST.
+
+Backend technology could be Python, nodejs or anything as per choice.</p>
+</div>
+
+<!--About Us--->
+<div id="aboutus">
+<div style="text-align:center">
+  <h1 style="color:#ffffff;font-size:60px">About GNUKhata</h1>
+</div>
+
+<!-- The App Section1 -->
+<div class="container2 animate-left" style="background-color:#f1f1f1">
+      <h1 style="color:#FF6382;font-size:35px"><b>Our Mission</b></h1>
+      <p style="color:#000000;font-size:15px">
+GNUKhata was initiated by Mr. Krishnakant Mane, a Masters in Computer Science and an avid free software advocate, in 2009 with a help of a modest team of programmers. The project was started with a vision to provide an extremely cost effective open source accounting and inventory software to ease the business of technically under-served. This implied that the software had a very short learning curve and catered to the need of small and medium scale traders, startups and even NGOs.
+<br><br>
+Ever since the project's inception, the mission has been to replace costly proprietary programs which were any ways out of reach for small service providers, retail shops and startups. Digital Freedom Foundation, the NGO which sustained and accelerated the development of GNUKhata has been advocating this very mission of making a commercially viable software for the said category of enterprises and communities. Thus the mission to digitally empower their business, which big IT companies tend to ignore has been at the forefront in GNUKhata's progress.
+<br><br>
+The major challenge in this mission was to develop a user experience model that suits those users who are not well-versed with digital technology and don't have time to go through complex screens to get their work done. This meant that a lot of features needed automation. GNUKhata now in it's version 5 series has so far gone a long way to achieve this mission, thanks to funding from various government institutes and now through Accion Labs PVT. LTD. It's latest version, namely 5.25 has particularly become popular due to the very automation features with GST compliance.
+<br><br>
+As a part of this entire vision, the GNUKhata team also intends to train rural and semi urben youth in book keeping. This way they can get self employed by means of providing GST compliance service on a doorstep model to small and medium enterprises in their areas or beyond.
+</p>    
+</div>
+
+<!-- The App Section2 -->
+<div class="container2 animate-right">
+      <h1 style="color:#ffffff;font-size:35px"><b>Team</b></h1>
+      <p style="color:#ffffff;font-size:15px">
+GNUKhata is being actively developed at Digital Freedom Foundation We have a vibrant and highly competent team led by Krishnakant Mane, the founder and team leader.
+<br><br>
+Here's the list of all the team members and former contributers.<br><br>
+<b>Our active contributers</b>
+<br>
+Mr. Krishnakant Mane(Founder & Project Leader) kk@gnukhata.in<br>
+Mr.Karan Kamdar, Chartered Accountant (Domain Consultant) <i>karan@gnukhata.in</i>
+<br>
+Mr. Abhijith Balan(Project Manger) abhijith@gnukhata.in<br>
+Ms. Prajkta Patkar(Lead Developer & Chief project-cordinator) <i>prajkta@gnukhata.in</i>
+<br>
+
+Ark Arjun (Logo designer) <i>arkarjun@gmail.com</i><br>
+Bhushan Patil <i>techgenzhosting@gmail.com</i><br>
+Jainam Doshi <i>jainam.doshi@sakec.ac.in</i><br>
+Nirali Dodhia <i>nirali.dodhia@sakec.ac.in</i><br>
+Rupali Badgujar <i>rupalibadgujar1234@gmail.com</i><br>
+Rohan Khairnar <i>rohankhairnar5@gmail.com</i><br>
+Rudresh Dongre <i>rudresh.dongre@sakec.ac.in</i>
+<br><br>
+<b>Former contributers</b>
+<br>
+
+CA Arun Kelkar (Former Domain Consultant) <i>arunkelkar@dff.org.in</i><br>
+Abhishek Alai,Aditi Joshi ,Aditi Patil,Aditya Shukla, Akhil KP Dasan, Akshay Puradkar,Amit Chaugule,Ankita Shanbhag,Anusha Kadambala,,Aparna Kokirkar, Ashutosh Paralikar,Ashwini Jogdand,Ashwini Shinde , Bhavesh Bawadhane,Dinesh Sutar, Ganesh Mashram,Girish Mane ,Ishan Masdekar,Kanchan Kayande,Mohd. Talha Pawaty,Namita Dubey,Navin Karkera,Nitesh Chaughule, Nutan Nivate, Payal Mamidwar,Parabjyot Singh,Parthavi Hora ,Poonam Dhane, Pornima Kolte,Prasad Shegokar,Praveen Arimbrathodiyil,Pravin Dake, Priyali Mhatre,Priyanka Prabhavale,Priyanka Tawde,Radhika Vadegaonkar,Rahul Chaurasiya ,Ravindra Lakal,Reshma Bhatawadekar,Ruchika Pai ,Rupali Markad,Rohini Baraskar ,Sachin Patil,Sadhana Bagal,Sakshi Agrawal,Sayali Yawle,Sanket Kolnoorkar ,Snehal Nighut, Shruti Surve,Shweta Pawar,Sonal Chaudhari,Sushila Sharma,Sundeep Padmanabh,Trupti Kini, Ujwala Pawde,Uma Mahesh , Vaishali Kamble,Vanita Rajpurohit,Vaibhav Kurhe,Vasudha Kadge, Vinayak Kusumkar and Vishakha Divekar.
+</p>
+</div>
+
+<!-- The App Section3 -->
+<div class="container2 animate-left" style="background-color:#f1f1f1">
+      <h1 style="color:#FF6382;font-size:35px"><b>Contribute</b></h1>
+      <p style="color:#000000;font-size:15px">
+     
+If you wish to contribute to GNUKhata you can do it in following ways.
+<br><br>
+<b>Help us Help others</b>
+<br>
+Join the user's mailing list here and come on board.
+<br>
+You can also join the developers mailing list here and discuss the development and progress of GNUKhata and suggest new features.<br><br>
+<b>Participate in development</b>
+<br>
+If you are a programmer then you can contribute by coding, fixing bugs or taking up other programming tasks. Get the latest source code from Gitlab for GNUKhata core logic and front end from the links below.
+
+</p>
+     </div>
+
+<!--News links--->
+<div id= "News">
+<div style="text-align:center">
+  <h1 style="color:#ffffff;font-size:60px;margin-bottom: -1vh">News</h1>
+</div>
+
+<div class="row">
+  <div class="column">
+     <a href="https://timesofindia.indiatimes.com/city/thiruvananthapuram/free-software-marks-end-of-tally-in-plus-two-commerce/articleshow/59415126.cms">
+           <img src="images/111.png" alt="category">
+     </a> 
+  </div>
+  <div class="column">
+    <a href="https://opensourceforu.com/">
+           <img src="images/222.png" alt="category">
+     </a> 
+  </div>
+  <div class="column">
+    <a href="https://yourstory.com/smbstory/new-gst-friendly-open-source-accounting-software-for-craft-producers-and-micro-finance-groups?utm_source=old-domain">
+           <img src="images/333.png" alt="category">
+     </a> 
+  </div>
+  <div class="column">
+    <a href="http://www.theweek.in/content/archival/news/sci-tech/Kerala-leads-open-source-drive-in-.ejs">
+           <img src="images/444.png" alt="category">
+     </a> 
+  </div>
+  <div class="column">
+    <a href="https://itsfoss.com/using-gnu-khata/">
+           <img src="images/555.png" alt="category">
+     </a> 
+  </div>
+</div>
+</div>
+<br>
+<br>
+
+<!--Footer--->
+ <div class="footer" id="myfooter">
+ <img src="images/logo.png" align="left"  width="50" height="50" padding="2px">
+  <a href="home" style="float:right"> info@gnukhata.in</a>
+  <a href="home" >Follow GNUKhata on </a>
+  <a href="https://www.facebook.com/gnukhata" class="fa fa-facebook"></a>
+  <a href="https://twitter.com/gnukhata_in" class="fa fa-twitter"></a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<script src="/js/home.js"></script>
+</body>
+</html> 
