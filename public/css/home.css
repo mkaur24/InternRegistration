@@ -1,0 +1,444 @@
+@charset "UTF-8";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:200");
+
+table,th,td {
+  border : 1px solid white;
+  border-collapse: collapse;
+}
+th,td {
+  color: white;
+  padding: 5px;
+}
+
+* {box-sizing: border-box}
+body {font-family: "Source Sans Pro", Helvetica, sans-serif;
+        margin:0;
+        background-image: url("../../images/bg.jpg");
+        background-position: 0px 40px;
+        }
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+/*NAVBAR*/
+ /* Add a black background color to the top navigation */
+.header {
+  background-color: #000000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  color: white;
+  
+}
+
+/* Style the links inside the navigation bar */
+.header a{
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.header a:hover {
+  background-color: #ddd;
+  opacity: 0.5;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.header a.active {
+  background-color: #FF6382;
+  color: white;
+}
+
+/* Hide the link that should open and close the header on small screens */
+.header .icon {
+  display: none;
+} 
+
+ /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the header (.icon) */
+@media screen and (max-width: 600px) {
+  .header a:not(:first-child) {display: none;}
+  .header a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the header with JavaScript when the user clicks on the icon. This class makes the header look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .header.responsive {position: relative;}
+  .header.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .header.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+} 
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+label{
+        color: #ffffff;
+        font-weight: bold;
+}
+
+
+input[type=submit] {
+  background-color: #FF6382;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button[type="button"] {
+  background-color: #FF6382;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #000000;
+}
+
+
+button[type="button"]:hover {
+  background-color: #000000;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px Arial;  
+}
+
+@keyframes fadein {
+  from { bottom: 0; opacity: 0; }
+  to { bottom: 30px; opacity: 0; }
+}
+
+@keyframes fadeout {
+  from { bottom: 30px; opacity: 1; }
+  to { bottom: 0; opacity: 0; }
+}
+
+
+/*CONTACT US*/
+/* Style the container/contact section */
+.container1 {
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+
+/* Create two columns that float next to eachother */
+.column1 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column1, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/*CAROUSEL*/
+/* Slideshow container */
+.slideshow-container {
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+  margin-top: 50px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: 22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #FF6382;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #FF6382;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/*ABOUT US*/
+.container2 {
+  padding: 16px;
+}
+
+/* Clear floats */
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-49 {
+  float: left;
+  width: 66.66%;
+  padding: 20px;
+}
+
+.column-51 {
+  float: left;
+  width: 33.33%;
+  padding: 20px;
+}
+
+/* Add responsiveness - make the columns appear on top of each other instead of next to each other on small screens */
+@media screen and (max-width: 1000px) {
+  .column-49,
+  .column-51 {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/*NEWS LINKS*/
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 20%;
+  padding: 40px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  width:100%;
+  height:100%;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*DESCRIPTION*/
+.container {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+}
+.animate-left{position:relative;animation:animateleft 2.0s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+
+.animate-right{position:relative; animation:animateright 2.0s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.container,.panel{padding:0.01em 16px}.panel{margin-top:16px;margin-bottom:16px}
+
+
+/* Clear floats after containers */
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+.container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Increase the font-size of a span element */
+.container span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+/* Add media queries for responsiveness. This will center both the text and the image inside the container */
+@media (max-width: 500px) {
+  .container {
+    text-align: center;
+  }
+
+  .container img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}
+
+/*FOOTER*/
+.footer {
+  background-color: #000000;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  color: white;
+}
+
+/* Style the links inside the navigation bar */
+.footer a{
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.footer a:hover {
+  background-color: #ddd;
+  opacity: 0.5;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.footer a.active {
+  background-color: #FF6382;
+  color: white;
+}
+
+/* Hide the link that should open and close the footer on small screens */
+.footer .icon {
+  display: none;
+} 
+
+ /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the footer (.icon) */
+@media screen and (max-width: 600px) {
+  .footer a:not(:first-child) {display: none;}
+  .footer a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the footer with JavaScript when the user clicks on the icon. This class makes the footer look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .footer.responsive {position: relative;}
+  .footer.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .footer.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+} 
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+label{
+        color: #ffffff;
+        font-weight: bold;
+}
+
+input[type=submit] {
+  background-color: #FF6382;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #FF6382;
+}
